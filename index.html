@@ -1,82 +1,86 @@
 <!DOCTYPE html>
+
 <html>
   <head>
+    <!-- Meta -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <script src="https://cdn.tailwindcss.com"></script>
-
+    <!-- Core CSS -->
     <link rel="stylesheet" href="https://unpkg.com/@vtmn/css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Roboto+Condensed:ital,wght@0,400;0,700;1,700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
   </head>
+
   <body>
-    <div class="block">
-      <nav aria-label="Breadcrumb" class="vtmn-breadcrumb">
-        <ol>
-          <li>
-            <span class="vtmx-home-line" aria-hidden="true"></span
-            ><a href="">Home</a>
-          </li>
-          <li><a href="">New</a></li>
-          <li><a href="">Children</a></li>
-          <li aria-label="Current page title">Tee-shirt</li>
-        </ol>
-      </nav>
-    </div>
-    <style>
-      .block > * {
-        margin: 0.5rem 0.3rem;
-      }
-    </style>
-
-    <div
-      class="block vtmn-flex vtmn-flex-row vtmn-flex-wrap"
-      style="display: flex; flex-direction: row; align-items: center"
-    >
-      <button class="vtmn-btn">Button</button>
+    <!-- Bread Crumb Container -->
+    <div class="container mx-auto">
+      <div class="block">
+        <nav aria-label="Breadcrumb" class="vtmn-breadcrumb">
+          <ol>
+            <li><a href="">Cykelsport</a></li>
+            <li><a href="">Cyklar</a></li>
+            <li><a href="">Kolfibercyklar</a></li>
+            <li aria-label="Current page title">EDR OFFROAD CF</li>
+          </ol>
+        </nav>
+      </div>
     </div>
 
-    <div class="block vtmn-flex vtmn-flex-row vtmn-flex-wrap">
-      <button class="vtmn-btn vtmn-btn--icon-alone" aria-label="add">
-        <span class="vtmx-add-line"></span>
-      </button>
-      <button class="vtmn-btn vtmn-btn--icon-left">
-        <span aria-hidden="true" class="vtmx-add-line"></span>
-        Button
-      </button>
-      <button class="vtmn-btn vtmn-btn--icon-right">
-        Button
-        <span aria-hidden="true" class="vtmx-arrow-right-s-line"></span>
-      </button>
+    <!-- Main Content -->
+    <div class="container mx-auto">
+      <div class="grid gap-4 md:grid-cols-1 lg:grid-cols-2">
+        <div>
+          <img
+            src="assets/images/van-rysel-logo.jpeg"
+            class="logo"
+            alt="Van Rysel Logo"
+          />
+          <img
+            src="assets/images/gravelbike-sideview.png"
+            alt="Gravel Bike EDR Offroad GRX 1X Van Rysel. Side view photo"
+          />
+          <!-- Slider main container -->
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">Slide 1</div>
+              <div class="swiper-slide">Slide 2</div>
+              <div class="swiper-slide">Slide 3</div>
+              ...
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+          </div>
+        </div>
+        <div>
+          <img
+            src="assets/images/gravelbike-sideview.png"
+            alt="Gravel Bike EDR Offroad GRX 1X Van Rysel. Side view photo"
+          />
+        </div>
+      </div>
     </div>
 
-    <div class="block vtmn-flex vtmn-flex-row vtmn-flex-wrap">
-      <button class="vtmn-btn vtmn-btn_size--small">Button</button>
-      <button class="vtmn-btn vtmn-btn_size--medium">Button</button>
-      <button class="vtmn-btn vtmn-btn_size--large">Button</button>
-    </div>
-
-    <div
-      class="block vtmn-flex vtmn-flex-row vtmn-flex-wrap"
-      style="display: flex; flex-direction: row; align-items: center"
-    >
-      <button class="vtmn-btn vtmn-btn_size--stretched">Button</button>
-    </div>
-    <div
-      class="
-        vtmn-flex
-        vtmn-bg-brand-digital-light-3
-        vtmn-rounded-lg
-        vtmn-p-6
-        vtmn-mb-5
-      "
-    >
-      <p
-        class="vtmn-text-xl vtmn-text-center vtmn-font-semibold vtmn-text-black"
-      >
-        Hello
-        <span class="vtmn-text-brand-digital vtmn-text-2xl">World!</span>
-        <span role="img" aria-label="Welcome menu"> 🎉 </span>
-      </p>
-    </div>
+    <!-- Core JS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="assets/js/swiper.js"></script>
   </body>
 </html>

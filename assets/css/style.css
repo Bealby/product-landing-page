@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Roboto+Condensed:ital,wght@0,400;0,700;1,700&display=swap');
+
+
+/*-----Body-----*/
+
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+/*-----Images-----*/
+
+.logo{
+    max-width:6rem;
+}
