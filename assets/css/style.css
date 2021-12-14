@@ -10,14 +10,52 @@ body {
 /*-----Images-----*/
 
 .logo{
-    max-width:6rem;
+    max-width:6rem !important;
+}
+
+img{
+  max-width:70% !important;
+}
+
+
+/*-----Padding-----*/
+
+.bike-content-padding{
+  padding-left:0rem;
+}
+
+/*-----Content-----*/
+
+#title-product{
+  	font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+
+}
+
+#text-product{
+  	font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+#price-product{
+  	font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+}
+
+#ref-product{
+  	font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 11px;
 }
 
 /*-----Swiper-----*/
 
 .swiper {
-        width: 100%;
-        height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .swiper-slide {
@@ -124,4 +162,30 @@ body {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
+}
+
+/*-----Media Quries-----*/
+
+@media(min-width:769px) {
+#title-product{
+  	font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+  }
+}
+
+/*-----Media Quries-----*/
+
+@media(min-width:1280px) {
+.bike-content-padding{
+  padding-left:12rem;
+}
+}
+
+@media(min-width:769px) {
+#text-product{
+  	font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
 }

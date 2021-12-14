@@ -44,7 +44,7 @@
   <div class="container mx-auto">
     <div class="grid gap-4 grid-cols-1 md:grid-cols-2 mx-auto">
       <div>
-        <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
+        <div style="--swiper-navigation-color: #007dbc; --swiper-pagination-color: #007dbc;" class="swiper mySwiper2">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <img src="assets/images/van-rysel-sideview.png" />
@@ -128,64 +128,93 @@
         </div>
       </div>
       <div>
-        <div class="container">
-          <div class="grid gap-2 grid-cols-1">
+        <div class="container bike-content-padding">
+          <div class="grid grid-cols-1 px-2">
             <div>
-              <p>GRAVELBIKE EDR OFFROAD GRX 1X VAN RYSEL</p>
-              <p>Tested in competitions. Very efficient on country roads, and surprisingly versatile on gravel roads.
-                A bike born to roll off-road, with a fantastically playful frame and the entire reliable group SHIMANO
-                GRX (driveline
-                and wheels). Tubeless ready tires of 700x38.</p>
+              <h1 class="mb-2" id="title-product">GRAVELBIKE EDR OFFROAD GRX 1X VAN RYSEL</h1>
+              <p id="text-product">
+                Tested in competitions. Very efficient on country roads, and surprisingly versatile on gravel roads. A
+                bike born to roll off-road, with a fantastically playful frame and the entire reliable group SHIMANO
+                GRX (driveline and wheels). Tubeless ready tires of 700x38.
+              </p>
             </div>
           </div>
-          <div class="grid gap-2 grid-cols-2 float-right">
+          <div class="grid grid-cols-1 px-2 mt-2">
             <div>
-              <p>20 999kr</p>
-            </div>
-            <div>
-              <p>Referens : 8601607</p>
-              <p>Referens : 8601607</p>
+              <p id="price-product">20 999kr</p>
+              <p id="ref-product">Referens : 8601607</p>
             </div>
           </div>
-          <div class="block">
-            <div class="vtmn-select_container">
-              <label for="my-select">Label</label>
-              <select name="sports" id="my-select" autocomplete disabled>
-                <option value="" disabled selected>Select</option>
-              </select>
+          <div class="grid grid-cols-1 px-2 mt-2">
+            <div class="block">
+              <div class="vtmn-select_container">
+                <select name="sports" id="my-select" autocomplete disabled>
+                  <option value="" disabled selected>Choose size....</option>
+                </select>
+              </div>
             </div>
           </div>
-          <button class="vtmn-btn vtmn-btn--icon-right">
-            Button
-            <span aria-hidden="true" class="vtmx-arrow-right-s-line"></span>
-          </button>
+          <div class="grid grid-cols-1 px-2 mt-2">
+            <div>
+              <button class="vtmn-btn vtmn-btn--icon-right">
+                Button
+                <span aria-hidden="true" class="vtmx-arrow-right-s-line"></span>
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <h2>Accordion with symbols</h2>
-  <p>In this example we have added a "plus" sign to each button. When the user clicks on the button, the "plus" sign is
-    replaced with a "minus" sign.</p>
-  <button class="accordion">Section 1</button>
-  <div class="panel">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat.</p>
-  </div>
+    <div class="grid grid-cols-1">
+      <button class="accordion">Section 1</button>
+      <div class="panel">
+        <table class="table-auto">
+          <thead>
+            <tr>
+              <th>Song</th>
+              <th>Artist</th>
+              <th>Year</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>The Sliding Mr. Bones (Next Stop, Pottersville)</td>
+              <td>Malcolm Lockyer</td>
+              <td>1961</td>
+            </tr>
+            <tr>
+              <td>Witchy Woman</td>
+              <td>The Eagles</td>
+              <td>1972</td>
+            </tr>
+            <tr>
+              <td>Shining Star</td>
+              <td>Earth, Wind, and Fire</td>
+              <td>1975</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
-  <button class="accordion">Section 2</button>
-  <div class="panel">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat.</p>
-  </div>
+      <button class="accordion">Section 2</button>
+      <div class="panel">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+          commodo consequat.
+        </p>
+      </div>
 
-  <button class="accordion">Section 3</button>
-  <div class="panel">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat.</p>
+      <button class="accordion">Section 3</button>
+      <div class="panel">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+          commodo consequat.
+        </p>
+      </div>
+    </div>
   </div>
 
   <!-- Core JS -->
