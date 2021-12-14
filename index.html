@@ -1,37 +1,41 @@
 <!DOCTYPE html>
 
 <html>
-  <head>
-    <!-- Meta -->
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Core CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/@vtmn/css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Roboto+Condensed:ital,wght@0,400;0,700;1,700&display=swap"
-    />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
-    />
-    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
-  </head>
+<head>
+  <!-- Meta -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <body>
-    <!-- Bread Crumb Container -->
-    <div class="container mx-auto">
-      <div class="block">
-        <nav aria-label="Breadcrumb" class="vtmn-breadcrumb">
-          <ol>
-            <li><a href="">Cykelsport</a></li>
-            <li><a href="">Cyklar</a></li>
-            <li><a href="">Kolfibercyklar</a></li>
-            <li aria-label="Current page title">EDR OFFROAD CF</li>
-          </ol>
-        </nav>
+  <!-- Core CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/@vtmn/css" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Roboto+Condensed:ital,wght@0,400;0,700;1,700&display=swap" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+</head>
+
+<body>
+  <!-- Bread Crumb Container -->
+  <div class="container">
+    <div class="block">
+      <nav aria-label="Breadcrumb" class="vtmn-breadcrumb">
+        <ol>
+          <li><a href="">Cykelsport</a></li>
+          <li><a href="">Cyklar</a></li>
+          <li><a href="">Kolfibercyklar</a></li>
+          <li aria-label="Current page title">EDR OFFROAD CF</li>
+        </ol>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="grid">
+      <div>
+        <img src="assets/images/van-rysel-logo.jpeg" class="logo" alt="Van Rysel Logo" />
       </div>
     </div>
 
@@ -39,23 +43,22 @@
     <div class="container mx-auto">
       <div class="grid gap-4 md:grid-cols-1 lg:grid-cols-2">
         <div>
-          <img
-            src="assets/images/van-rysel-logo.jpeg"
-            class="logo"
-            alt="Van Rysel Logo"
-          />
-          <img
-            src="assets/images/gravelbike-sideview.png"
-            alt="Gravel Bike EDR Offroad GRX 1X Van Rysel. Side view photo"
-          />
+          <img src="assets/images/gravelbike-sideview.png"
+            alt="Gravel Bike EDR Offroad GRX 1X Van Rysel. Side view photo" />
           <!-- Slider main container -->
           <div class="swiper">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
               <!-- Slides -->
-              <div class="swiper-slide">Slide 1</div>
-              <div class="swiper-slide">Slide 2</div>
-              <div class="swiper-slide">Slide 3</div>
+              <div class="swiper-slide">
+                <img src="assets/images/van-rysel-logo.jpeg" class="logo" alt="Van Rysel Logo" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/van-rysel-logo.jpeg" class="logo" alt="Van Rysel Logo" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/van-rysel-logo.jpeg" class="logo" alt="Van Rysel Logo" />
+              </div>
               ...
             </div>
             <!-- If we need pagination -->
@@ -70,10 +73,44 @@
           </div>
         </div>
         <div>
-          <img
-            src="assets/images/gravelbike-sideview.png"
-            alt="Gravel Bike EDR Offroad GRX 1X Van Rysel. Side view photo"
-          />
+          <div class="grid gap-2 grid-cols-2">
+            <div>
+              <p>GRAVELBIKE EDR OFFROAD GRX 1X VAN RYSEL</p>
+            </div>
+            <div>
+              <p>Tested in competitions. Very efficient on country roads, and surprisingly versatile on gravel roads.
+                A bike born to roll off-road, with a fantastically playful frame and the entire reliable group SHIMANO
+                GRX (driveline
+                and wheels). Tubeless ready tires of 700x38.</p>
+            </div>
+          </div>
+          <div class="grid gap-2 grid-cols-2">
+            <div>
+              <p>20 999kr</p>
+            </div>
+            <div>
+              <p>Referens : 8601607</p>
+              <p>Referens : 8601607</p>
+            </div>
+          </div>
+          <div class="block">
+            <div class="vtmn-select_container">
+              <label for="my-select">Label</label>
+              <select name="sports" id="my-select" autocomplete disabled>
+                <option value="" disabled selected>Select</option>
+                <option value="gymnastics">Gymnastics</option>
+                <option value="archery">Archery</option>
+                <option value="climbing">Climbing</option>
+                <option value="surf">Surf</option>
+                <option value="badminton">Badminton</option>
+                <option value="football">Football</option>
+              </select>
+            </div>
+          </div>
+          <button class="vtmn-btn vtmn-btn--icon-right">
+            Button
+            <span aria-hidden="true" class="vtmx-arrow-right-s-line"></span>
+          </button>
         </div>
       </div>
     </div>
@@ -82,5 +119,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="assets/js/swiper.js"></script>
-  </body>
+    <script src="assets/js/accordian.js"></script>
+</body>
+
 </html>
