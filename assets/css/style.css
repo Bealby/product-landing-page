@@ -46,21 +46,21 @@ img {
     font-family: "Roboto Condensed", sans-serif;
     font-weight: 700;
     font-size: 15px;
-    font-style: italic;
+    font-style: normal;
 }
 
 .tab-content-header{
     font-family: "Roboto Condensed", sans-serif;
     font-weight: 700;
-    font-size: 28px;
-    font-style: italic;
+    font-size: 15px;
+    font-style: normal;
     text-align: center;
 }
 
 .tab-content-title{
     font-family: "Roboto Condensed", sans-serif;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 15px;
     font-style: italic;
     text-align: left;
 }
@@ -68,7 +68,7 @@ img {
 .tab-content-text{
     font-family: "Roboto Condensed", sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 13px;
     text-align: left;
 }
 
@@ -169,7 +169,6 @@ img {
   border: none;
   text-align: left;
   outline: none;
-  font-size: 15px;
   transition: 0.4s;
 }
 
@@ -180,7 +179,6 @@ img {
 .accordion:after {
   content: '\002B';
   color: #777;
-  font-weight: bold;
   float: right;
   margin-left: 5px;
 }
@@ -218,7 +216,6 @@ img {
   cursor: pointer;
   padding: 14px 16px;
   transition: 0.3s;
-  font-size: 17px;
 }
 
 /* Change background color of buttons on hover */
@@ -267,5 +264,37 @@ img {
         font-family: "Roboto", sans-serif;
         font-weight: 400;
         font-size: 16px;
+    }
+}
+
+/*-----Adjust size/ weight of tab-title for better viewing on mb-----*/
+
+@media (min-width: 769px) {
+    .tab-titles {
+        font-style: italic;
+    }
+}
+
+/*-----Adjust size/ weight of tab-content-header for better viewing on mb-----*/
+
+@media (min-width: 769px) {
+.tab-content-header{
+    font-size: 28px;
+    }
+}
+
+/*-----Adjust size/ weight of tab-content-title for better viewing on mb-----*/
+
+@media (min-width: 769px) {
+.tab-content-title{
+    font-size: 18px;
+    }
+}
+
+/*-----Adjust size/ weight of tab-content-text for better viewing on mb-----*/
+
+@media (min-width: 769px) {
+.tab-content-text{
+    font-size: 16px;
     }
 }
