@@ -176,10 +176,41 @@
 
   </div>
 
-  <!-- Tab Container -->
+
+  <!-- FOR BIKE INFO - TAB CONTAINER USED FOR MD/LG AND AN ACCORDIAN FOR SM -->
 
   <div class="container container-tab mt-8">
-    <div class="tab text-center">
+
+    <!-- Accordian sm -->
+
+    <h2>Accordion with symbols</h2>
+    <p>In this example we have added a "plus" sign to each button. When the user clicks on the button, the "plus" sign
+      is
+      replaced with a "minus" sign.</p>
+    <button class="accordion">Section 1</button>
+    <div class="panel">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat.</p>
+    </div>
+
+    <button class="accordion">Section 2</button>
+    <div class="panel">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat.</p>
+    </div>
+
+    <button class="accordion">Section 3</button>
+    <div class="panel">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat.</p>
+    </div>
+
+    <!-- Tab Container md/lg -->
+
+    <div class="tab text-center hidden md:block">
       <div class="grid grid-cols-3">
         <div>
           <button class="tablinks tab-titles uppercase" onclick="openCity(event, 'Product')">Product Benefits</button>
@@ -194,7 +225,31 @@
       </div>
     </div>
 
-    <div id="Product" class="tabcontent tab-padding">
+    <div id="Product" class="tabcontent tab-padding hidden md:block">
+      <h1 class="tab-content-header mt-8 mb-8">Benefits of the Product</h1>
+      <div class="grid grid-cols-3">
+        <div>
+          <p class="tab-content-title uppercase">Efficiency</p>
+        </div>
+        <div class="col-span-2">
+          <p class="tab-content-text col-span-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna
+            aliqua.</p>
+        </div>
+      </div>
+      <div class="grid grid-cols-3 mt-8">
+        <div>
+          <p class="tab-content-title uppercase">Braking Force</p>
+        </div>
+        <div class="col-span-2">
+          <p class="tab-content-text col-span-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna
+            aliqua.</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="Details" class="tabcontent tab-padding hidden md:block">
       <h1 class="tab-content-header mt-8 mb-8">Technical Information</h1>
       <div class="grid grid-cols-3">
         <div>
@@ -274,23 +329,25 @@
       </div>
     </div>
 
-    <div id="Details" class="tabcontent">
-      <h1 class="tab-content-title">Detailed Information</h1>
-      <p>Paris is the capital of France.</p>
-    </div>
-
-    <div id="Reviews" class="tabcontent">
-      <h1 class="tab-content-title">Reviews</h1>
-      <p>Tokyo is the capital of Japan.</p>
+    <div id="Reviews" class="tabcontent tab-padding hidden md:block">
+      <h1 class="tab-content-header mt-8 mb-8">Customer Reviews</h1>
+      <div class="grid grid-cols-3">
+        <div>
+          <p class="tab-content-title uppercase"></p>
+        </div>
+        <div class="col-span-2">
+          <p class="tab-content-text col-span-2"></p>
+        </div>
+      </div>
     </div>
   </div>
-
 
   <!-- Core JS -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
   <script src="assets/js/swiper.js"></script>
   <script src="assets/js/tabs.js"></script>
+  <script src="assets/js/accordian.js"></script>
 </body>
 
 </html>
