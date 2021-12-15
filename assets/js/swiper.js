@@ -1,3 +1,5 @@
+// Function for Swiper JS for product images
+
 var swiper = new Swiper(".mySwiper", {
         loop: true,
         spaceBetween: 10,

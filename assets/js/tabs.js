@@ -1,3 +1,5 @@
+// Tab feature for product info md/lg
+
 function openInfo(evt, infoName) {
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");

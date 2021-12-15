@@ -1,3 +1,5 @@
+// Function for accordian feature sm
+
 var acc = document.getElementsByClassName("accordion");
 var i;
 
