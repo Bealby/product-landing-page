@@ -28,6 +28,12 @@ img {
   padding-bottom:15rem !important;
 }
 
+/*-----Container-----*/
+
+.container-tab{
+  max-width:100% !important;
+}
+
 /*-----Content-----*/
 
 #title-product {
@@ -37,9 +43,9 @@ img {
 }
 
 #text-product {
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 13px;
 }
 
 .tab-titles {
@@ -74,14 +80,19 @@ img {
 
 #price-product {
     font-family: "Roboto Condensed", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
+    font-weight: 700;
+    font-size: 36px;
 }
 
 #ref-product {
     font-family: "Roboto Condensed", sans-serif;
     font-weight: 400;
     font-size: 11px;
+}
+
+.button-font{
+  font-size:14px;
+  font-weight:700;
 }
 
 /*-----Swiper JS-----*/
@@ -197,10 +208,6 @@ img {
 
 /*-----Tabs-----*/
 
-.container-tab{
-  max-width:100% !important;
-}
-
 /* Style the tab */
 .tab {
   overflow: hidden;
@@ -261,7 +268,7 @@ img {
 
 @media (min-width: 769px) {
     #text-product {
-        font-family: "Roboto", sans-serif;
+        font-family: "Roboto condensed", sans-serif;
         font-weight: 400;
         font-size: 16px;
     }
@@ -296,5 +303,13 @@ img {
 @media (min-width: 769px) {
 .tab-content-text{
     font-size: 16px;
+    }
+}
+
+/*-----Adjust size of button font for better viewing on mb-----*/
+
+@media (min-width: 769px) {
+.button-font{
+  font-size:15px;
     }
 }
