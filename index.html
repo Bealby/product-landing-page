@@ -174,142 +174,123 @@
       </div>
     </div>
 
-    <!-- Accordian - Product Details -->
+  </div>
 
-    <!-- Accordian - SM -->
-    <div class="container mt-4 md:hidden lg:hidden">
-      <div class="grid grid-cols-1 mt-8">
-        <button class="accordion">Product Benefits</button>
-        <div class="panel">
-          <table class="table-auto">
-            <thead>
-              <tr>
-                <th>Efficiency</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Carbon fiber frame and front fork. The light blade SHIMANO GRX 800 with 42 teeth.</td>
-              </tr>
-            </tbody>
-            <thead>
-              <tr>
-                <th>Bicycle comfort</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Aluminum handlebar with 12 ° flare, tubeless ready tires 38 mm. Saddle FIZIK ANTARES.</td>
-              </tr>
-            </tbody>
-            <thead>
-              <tr>
-                <th>Precision</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Simple and precise driveline with single blade.</td>
-              </tr>
-            </tbody>
-            <thead>
-              <tr>
-                <th>Attachment</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Comfortable tubeless ready tire of 38 mm that provides good grip on dry surfaces.</td>
-              </tr>
-            </tbody>
-            <thead>
-              <tr>
-                <th>Braking force</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Hydraulic disc brakes. Brake pads in resin (organic). Safe and powerful!</td>
-              </tr>
-            </tbody>
-            <thead>
-              <tr>
-                <th>Solidity</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>The Shimano GRX wheel, developed with technology from the trail cycling area.</td>
-              </tr>
-            </tbody>
-            <thead>
-              <tr>
-                <th>Versatility</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Cassette of 11 x 42. 42x11 for sprints on flat ground and 42x42 for climbs.</td>
-              </tr>
-            </tbody>
-          </table>
+  <!-- Tab Container -->
+
+  <div class="container container-tab mt-8">
+    <div class="tab text-center">
+      <div class="grid grid-cols-3">
+        <div>
+          <button class="tablinks tab-titles uppercase" onclick="openCity(event, 'Product')">Product Benefits</button>
         </div>
-
-        <button class="accordion">Detailed Information</button>
-        <div class="panel">
-          <table class="table-auto">
-            <thead>
-              <tr>
-                <th>RAM</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>
-                  The frame is made of carbon fiber and has shown what it does for international cycling cross races. It
-                  is playful, precise and has a geometry that facilitates fast acceleration. The wires are pulled
-                  internally into the frame, which makes them better protected against mud. The framework is approved by
-                  the UCI. Frame weight (lacquered): 1020 g in size M.
-                </td>
-              </tr>
-            </tbody>
-            <thead>
-              <tr>
-                <th>FRONT FORK</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Front fork in 100% carbon fiber. Responds quickly and provides good precision in the steering. Front
-                  fork weight: 340 g</td>
-              </tr>
-            </tbody>
-            <thead>
-              <tr>
-                <th>DRIVELINE</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Controls: Shimano GRX 600 Rear gear: Shimano GRX 812 Chain: KMC X11</td>
-              </tr>
-            </tbody>
-          </table>
+        <div>
+          <button class="tablinks tab-titles uppercase" onclick="openCity(event, 'Details')">Detailed
+            Information</button>
+        </div>
+        <div>
+          <button class="tablinks tab-titles uppercase" onclick="openCity(event, 'Reviews')">Reviews</button>
         </div>
       </div>
     </div>
 
-    <!-- Accordian - md/lg -->
-    <div class="container mt-4 hidden md:flex">
-      <nav><a href="/html/">Detailed Information</a> | <a href="/css/">Product Benefits</a> |</nav>
+    <div id="Product" class="tabcontent tab-padding">
+      <h1 class="tab-content-header mt-8 mb-8">Technical Information</h1>
+      <div class="grid grid-cols-3">
+        <div>
+          <p class="tab-content-title uppercase">RAM</p>
+        </div>
+        <div class="col-span-2">
+          <p class="tab-content-text col-span-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis
+            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+            sint
+            occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div>
+      <div class="grid grid-cols-3 mt-8">
+        <div>
+          <p class="tab-content-title uppercase">Front Fork</p>
+        </div>
+        <div class="col-span-2">
+          <p class="tab-content-text col-span-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat.</p>
+        </div>
+      </div>
+      <div class="grid grid-cols-3 mt-8">
+        <div>
+          <p class="tab-content-title uppercase">Driveline</p>
+        </div>
+        <div class="col-span-2">
+          <p class="tab-content-text">Elit pellentesque habitant morbi tristique senectus et netus et malesuada. Integer
+            vitae justo eget magna. Vel facilisis
+            volutpat est velit egestas. Iaculis urna id volutpat lacus laoreet. Tristique senectus et netus et
+            malesuada. Convallis
+            convallis tellus id interdum velit laoreet id.</p>
+        </div>
+      </div>
+      <h1 class="tab-content-header mt-8 mb-8">Materials and Advice</h1>
+      <div class="grid grid-cols-3">
+        <div>
+          <p class="tab-content-title uppercase">Composition</p>
+        </div>
+        <div class="col-span-2">
+          <p class="tab-content-text col-span-2">Elit pellentesque habitant morbi tristique senectus et netus et
+            malesuada. Integer
+            vitae justo eget magna. Vel facilisis
+            volutpat est velit egestas. Iaculis urna id volutpat lacus laoreet. Tristique senectus et netus et
+            malesuada. Convallis
+            convallis tellus id interdum velit laoreet id.</p>
+        </div>
+      </div>
+      <div class="grid grid-cols-3 mt-8">
+        <div>
+          <p class="tab-content-title uppercase">Instructions</p>
+        </div>
+        <div class="col-span-2">
+          <p class="tab-content-text col-span-2">Elit pellentesque habitant morbi tristique senectus et netus et
+            malesuada. Integer
+            vitae justo eget magna. Vel facilisis
+            volutpat est velit egestas. Iaculis urna id volutpat lacus laoreet. Tristique senectus et netus et
+            malesuada. Convallis
+            convallis tellus id interdum velit laoreet id.</p>
+        </div>
+      </div>
+      <div class="grid grid-cols-3 mt-8">
+        <div>
+          <p class="tab-content-title uppercase">Driveline</p>
+        </div>
+        <div class="col-span-2">
+          <p class="tab-content-text">Elit pellentesque habitant morbi tristique senectus et netus et malesuada. Integer
+            vitae justo eget magna. Vel facilisis
+            volutpat est velit egestas. Iaculis urna id volutpat lacus laoreet. Tristique senectus et netus et
+            malesuada. Convallis
+            convallis tellus id interdum velit laoreet id.</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="Details" class="tabcontent">
+      <h1 class="tab-content-title">Detailed Information</h1>
+      <p>Paris is the capital of France.</p>
+    </div>
+
+    <div id="Reviews" class="tabcontent">
+      <h1 class="tab-content-title">Reviews</h1>
+      <p>Tokyo is the capital of Japan.</p>
     </div>
   </div>
+
 
   <!-- Core JS -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
   <script src="assets/js/swiper.js"></script>
-  <script src="assets/js/accordian.js"></script>
+  <script src="assets/js/tabs.js"></script>
 </body>
 
 </html>
