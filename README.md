@@ -9,10 +9,10 @@ providing a great user experience and enticing
 users to engage and purchase.
 
 The landing page adheres to the Decathlon Design
-System and the world wide web consortium. Images
+System and the World Wide Web consortium. Images
 have a standard dimension and are below 300kb.
 Fonts are optimised accordingly throughout the
-landing page for all screen sizes. 
+landing page for all screen sizes.
 
 ---
 
@@ -50,7 +50,7 @@ To provide the best user experience the product
 details are provided within a ‘Tab’ feature for
 desktop and an ‘Accordion’ feature for mobile.
 
-The tab feature allows for users to choose their
+The 'Tab' feature allows for users to choose their
 particular interest, whether it be
 ‘Product Benefits’ or ‘Bike Spec’, without being
 navigated to different sections of the page. It
@@ -58,7 +58,7 @@ keeps the user engaged and focused in the decision
 at hand, with the button to purchase largely
 remaining visible and in eyesight.
 
-The tab feature headings are against an off-white
+The ‘Tab’ feature headings are against an off-white
 background with the first tab panel always opened
 as default so that the user is aware of the options
 available.
@@ -70,7 +70,7 @@ and closed at the users discretion.
 
 A scroll feature is added in the bottom right of
 the screen for all screen sizes. This is a great
-feature to allow users to always quickly go to
+feature to allow users to always quickly go to the
 top of the page rather than scrolling up.
 
 ---
@@ -81,7 +81,7 @@ top of the page rather than scrolling up.
   once user has scrolled down page
 - Zoom feature for Swiper JS should be added
 - Break point issue (approx screen size at 650px)
-  for change from ‘Tab’ to ‘Accordian’
+  for change from ‘Tab’ to ‘Accordion’
 - Android and OS device adaption
 
 ---
